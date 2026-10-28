@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { ImagePlaceholder, TextLink } from "@/libs/components"
 import { MAIN_OFFICE } from "@/libs/data/site"
-import { ContactDetails } from "../(components)/contact-details"
-import { PageHero } from "../(components)/page-hero"
+import { ContactDetails } from "../(components)/contact_details"
+import { PageHero } from "../(components)/page_hero"
 
 export const metadata: Metadata = {
   title: "Contact",

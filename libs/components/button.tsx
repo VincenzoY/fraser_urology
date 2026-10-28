@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from "react"
-import { buttonStyles, type ButtonVariant } from "./button-styles"
+import { buttonStyles, type ButtonVariant } from "./button_styles"
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant

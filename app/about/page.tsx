@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { ImagePlaceholder } from "@/libs/components"
 import { HOSPITALS } from "@/libs/data/site"
-import { PageHero } from "../(components)/page-hero"
+import { PageHero } from "../(components)/page_hero"
 import { HospitalIcon } from "../(components)/icons"
 
 export const metadata: Metadata = {

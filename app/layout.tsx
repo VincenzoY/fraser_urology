@@ -2,8 +2,8 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter"
 import type { Metadata } from "next"
 import { Lato } from "next/font/google"
 import "./globals.css"
-import { Footer } from "./(components)/footer"
-import { Header } from "./(components)/header"
+import { Footer } from "./footer"
+import { Header } from "./header"
 
 const lato = Lato({
   variable: "--font-lato",

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import type { ComponentProps } from "react"
-import { buttonStyles, type ButtonVariant } from "./button-styles"
+import { buttonStyles, type ButtonVariant } from "./button_styles"
 
 type ButtonLinkProps = ComponentProps<typeof Link> & {
   variant?: ButtonVariant

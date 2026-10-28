@@ -1,6 +1,6 @@
 import { ImagePlaceholder } from "@/libs/components"
 import type { Surgeon } from "@/libs/data/surgeons"
-import { ContactDetails } from "./contact-details"
+import { ContactDetails } from "../(components)/contact_details"
 
 export function SurgeonCard({ surgeon, tone }: { surgeon: Surgeon; tone: "white" | "tinted" }) {
   const [lead, ...rest] = surgeon.about
