@@ -27,7 +27,7 @@ export default async function NewsletterPost({ params }: PageProps<"/newsletter/
 
   return (
     <main className="mx-auto w-full max-w-2xl px-6 py-16">
-      <article className="prose dark:prose-invert">
+      <article className="prose prose-headings:text-navy prose-a:text-brand-800">
         <Content />
       </article>
     </main>
