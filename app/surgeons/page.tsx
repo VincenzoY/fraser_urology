@@ -4,7 +4,6 @@ import { PageHero } from "../(components)/page_hero"
 import { SurgeonCard } from "./surgeon_card"
 
 export const metadata: Metadata = {
-  title: "Our Surgeons",
   description: "Meet the Fraser Urology surgeons and find their contact details.",
 }
 
