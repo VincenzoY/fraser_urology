@@ -13,7 +13,7 @@ export async function getPostSlugs(): Promise<string[]> {
   "use cache"
   const files = await readdir(CONTENT_DIR)
   return files
-    .filter((file) => file.endsWith(".mdx"))
+    .filter((file) => file.endsWith(".mdx") && !file.startsWith("_"))
     .map((file) => file.replace(/\.mdx$/, ""))
 }
 
