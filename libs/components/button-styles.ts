@@ -7,7 +7,7 @@ const variants: Record<ButtonVariant, string> = {
   primary: "bg-brand-700 text-white hover:bg-brand-800",
   secondary:
     "border-2 border-brand-700 bg-white text-brand-800 hover:bg-brand-100",
-  accent: "bg-fraser-orange text-navy hover:bg-fraser-orange-dark",
+  accent: "bg-fraser-orange text-black hover:bg-fraser-orange-dark hover:text-white",
 }
 
 export function buttonStyles(variant: ButtonVariant = "primary", className = "") {

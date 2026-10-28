@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { SURGEONS } from "@/libs/data/surgeons"
-import { PageHero } from "../_components/page-hero"
-import { SurgeonCard } from "../_components/surgeon-card"
+import { PageHero } from "../(components)/page-hero"
+import { SurgeonCard } from "../(components)/surgeon-card"
 
 export const metadata: Metadata = {
   title: "Our Surgeons",

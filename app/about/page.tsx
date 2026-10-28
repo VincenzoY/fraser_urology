@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { ImagePlaceholder } from "@/libs/components"
 import { HOSPITALS } from "@/libs/data/site"
-import { PageHero } from "../_components/page-hero"
-import { HospitalIcon } from "../_components/icons"
+import { PageHero } from "../(components)/page-hero"
+import { HospitalIcon } from "../(components)/icons"
 
 export const metadata: Metadata = {
   title: "About Your Urologist",
@@ -62,9 +62,9 @@ export default function AboutPage() {
             {HOSPITALS.map((h) => (
               <li
                 key={h.name}
-                className="flex flex-col items-center rounded-2xl border border-brand-200 bg-brand-50 p-8 text-center"
+                className="flex flex-col items-center rounded-lg border border-brand-200 bg-brand-50 p-8 text-center"
               >
-                <span className="rounded-full bg-brand-100 p-4 text-brand-800 [&_svg]:h-8 [&_svg]:w-8">
+                <span className="flex rounded-full bg-brand-100 p-4 text-4xl text-brand-800">
                   <HospitalIcon />
                 </span>
                 <p className="mt-4 text-xl font-bold text-navy">{h.name}</p>
@@ -74,7 +74,7 @@ export default function AboutPage() {
           </ul>
           <ImagePlaceholder
             label="Map of the Fraser Health coverage area"
-            className="mt-10 h-64 rounded-2xl"
+            className="mt-10 h-64 rounded-lg"
           />
         </div>
       </section>

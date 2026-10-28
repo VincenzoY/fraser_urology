@@ -6,6 +6,7 @@ export default function Home() {
       <section className="relative overflow-hidden text-white">
         <ImagePlaceholder
           label="Calm BC scene: mountain reflected in a still lake"
+          labelPosition="corner"
           className="absolute inset-0 bg-linear-to-b from-brand-700 via-brand-800 to-brand-900"
         />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-36">
@@ -38,7 +39,7 @@ export default function Home() {
       </section>
 
       <section aria-hidden="true" className="bg-brand-50">
-        <ImagePlaceholder label="Forest light along a BC river" className="mx-auto h-48 max-w-6xl bg-brand-100" />
+        <ImagePlaceholder label="Forest light along a BC river" className="h-48 w-full bg-brand-100" />
       </section>
     </main>
   )

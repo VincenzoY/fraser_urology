@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { ButtonLink } from "@/libs/components"
+import { ImagePlaceholder, TextLink } from "@/libs/components"
 import { MAIN_OFFICE } from "@/libs/data/site"
-import { ContactDetails } from "../_components/contact-details"
-import { PageHero } from "../_components/page-hero"
+import { ContactDetails } from "../(components)/contact-details"
+import { PageHero } from "../(components)/page-hero"
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -14,15 +14,16 @@ export default function ContactPage() {
     <main>
       <PageHero title="Contact" imageLabel="Calm river at dawn" />
 
-      <div className="mx-auto max-w-3xl px-6 py-14">
-        <div role="note" className="rounded-2xl border-l-4 border-fraser-orange bg-brand-50 p-6 text-lg text-brand-900">
+      <div className="mx-auto max-w-6xl px-6 py-14">
+        <div role="note" className="rounded-lg border border-brand-200 bg-brand-50 p-6 text-lg text-brand-900">
           <p className="font-bold">A referral is required</p>
           <p className="mt-2">
             A referral from your general practitioner, the emergency department,
             or another specialist is required for all new consultations.
           </p>
           <p className="mt-2">
-            Please refer to the About Your Urologist page for specific contact information.
+            Please refer to the <TextLink href="/about">About Your Urologist</TextLink> page for
+            specific contact information.
           </p>
         </div>
 
@@ -37,11 +38,10 @@ export default function ContactPage() {
           />
         </div>
 
-        <div className="mt-10">
-          <ButtonLink href="/surgeons" variant="secondary">
-            Find your urologist&apos;s office
-          </ButtonLink>
-        </div>
+        <ImagePlaceholder
+          label="Map showing the Fraser Urology main office"
+          className="mt-10 h-80 rounded-lg"
+        />
       </div>
     </main>
   )

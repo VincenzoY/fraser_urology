@@ -10,16 +10,19 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-lato), Helvetica, Arial, sans-serif;
-  --color-brand-50: #f0f8fd;
-  --color-brand-100: #dcedf8;
-  --color-brand-200: #bddcf0;
-  --color-brand-300: #8fc3e3;
-  --color-brand-700: #1b6a99;
-  --color-brand-800: #17536f;
-  --color-brand-900: #0f3a52;
-  --color-navy: #002145;
-  --color-fraser-orange: #f28a1d;
-  --color-fraser-orange-dark: #d97708;
+  /* UBC palette: https://brand.ubc.ca/guidelines/downloads/ubc-colour-and-fonts/ */
+  --color-brand-50: #f0f9fd; /* tint of UBC light blue, for backgrounds */
+  --color-brand-100: #dbf0f9; /* tint of UBC light blue, for backgrounds */
+  --color-brand-200: #97d4e9; /* UBC light blue, PMS 2975 */
+  --color-brand-300: #6ec4e8; /* UBC light blue, PMS 297 */
+  --color-brand-700: #0077c8; /* UBC blue, PMS 3005 */
+  --color-brand-800: #0055b7; /* UBC blue, PMS 2935 */
+  --color-brand-900: #002145; /* UBC blue, PMS 282 */
+  --color-navy: #002145; /* UBC blue, PMS 282 */
+  /* Fraser Health palette: https://www.fraserhealth.ca/about-us/corporate-identity-and-brand-standards/colours */
+  --color-fraser-blue: #005293;
+  --color-fraser-orange: #e35205;
+  --color-fraser-orange-dark: #b84404;
 }
 
 html {

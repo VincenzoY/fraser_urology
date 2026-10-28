@@ -12,7 +12,7 @@ type ContactDetailsProps = {
 function Row({ icon, label, children }: { icon: React.ReactNode; label: string; children: React.ReactNode }) {
   return (
     <div className="flex items-start gap-3">
-      <span className="mt-0.5 text-brand-700">{icon}</span>
+      <span className="flex h-6 shrink-0 items-center text-xl text-brand-700">{icon}</span>
       <div>
         <dt className="sr-only">{label}</dt>
         <dd>{children}</dd>
