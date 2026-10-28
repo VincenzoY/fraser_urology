@@ -15,19 +15,19 @@ async function loadPost(slug: string) {
 
 export async function generateMetadata({
   params,
-}: PageProps<"/blog/[slug]">): Promise<Metadata> {
+}: PageProps<"/newsletter/[slug]">): Promise<Metadata> {
   const { slug } = await params
   const { metadata } = await loadPost(slug)
   return { title: metadata.title, description: metadata.summary }
 }
 
-export default async function BlogPost({ params }: PageProps<"/blog/[slug]">) {
+export default async function NewsletterPost({ params }: PageProps<"/newsletter/[slug]">) {
   const { slug } = await params
   const { Content } = await loadPost(slug)
 
   return (
     <main className="mx-auto w-full max-w-2xl px-6 py-16">
-      <article>
+      <article className="prose dark:prose-invert">
         <Content />
       </article>
     </main>
