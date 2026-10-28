@@ -7,7 +7,7 @@ export default function Home() {
         <ImagePlaceholder
           label="Calm BC scene: mountain reflected in a still lake"
           labelPosition="corner"
-          className="absolute inset-0 bg-linear-to-b from-brand-700 via-brand-800 to-brand-900"
+          className="absolute inset-0 bg-linear-to-b from-brand-700 to-brand-800"
         />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-36">
           <h1 className="max-w-3xl text-4xl font-black tracking-tight md:text-6xl">
