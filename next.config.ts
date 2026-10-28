@@ -7,8 +7,10 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Static export for GitHub Pages. BASE_PATH is set by the deploy workflow
+  // (the default Pages URL is a sub-path); local dev serves from "/".
+  output: "export",
+  basePath: process.env.BASE_PATH ?? "",
   turbopack: {
     rules: {
       "*.css": {

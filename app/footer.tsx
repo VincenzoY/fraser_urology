@@ -36,8 +36,7 @@ export function Footer() {
   )
 }
 
-async function FooterCopyright() {
-  "use cache"
+function FooterCopyright() {
   return (
     <p>
       © {SITE_NAME}, {new Date().getFullYear()}

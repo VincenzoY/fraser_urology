@@ -10,7 +10,6 @@ export type PostMetadata = {
 const CONTENT_DIR = path.join(process.cwd(), "content")
 
 export async function getPostSlugs(): Promise<string[]> {
-  "use cache"
   const files = await readdir(CONTENT_DIR)
   return files
     .filter((file) => file.endsWith(".mdx") && !file.startsWith("_"))
@@ -23,7 +22,6 @@ export async function getPost(slug: string) {
 }
 
 export async function getAllPosts() {
-  "use cache"
   const slugs = await getPostSlugs()
   const posts = await Promise.all(
     slugs.map(async (slug) => ({ slug, ...(await getPost(slug)).metadata })),
