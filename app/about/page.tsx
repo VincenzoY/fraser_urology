@@ -5,7 +5,6 @@ import { PageHero } from "../(components)/page_hero"
 import { HospitalIcon } from "../(components)/icons"
 
 export const metadata: Metadata = {
-  title: "About Your Urologist",
   description:
     "Our mission, teaching affiliations, credentials and hospital locations across Fraser Health.",
 }

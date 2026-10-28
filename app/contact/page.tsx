@@ -5,7 +5,6 @@ import { ContactDetails } from "../(components)/contact_details"
 import { PageHero } from "../(components)/page_hero"
 
 export const metadata: Metadata = {
-  title: "Contact",
   description: "How to reach the Fraser Urology main office and your urologist's office.",
 }
 

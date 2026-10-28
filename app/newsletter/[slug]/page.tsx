@@ -18,7 +18,7 @@ export async function generateMetadata({
 }: PageProps<"/newsletter/[slug]">): Promise<Metadata> {
   const { slug } = await params
   const { metadata } = await loadPost(slug)
-  return { title: metadata.title, description: metadata.summary }
+  return { description: metadata.summary }
 }
 
 export default async function NewsletterPost({ params }: PageProps<"/newsletter/[slug]">) {

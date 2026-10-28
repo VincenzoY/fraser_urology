@@ -1,10 +1,5 @@
-import type { Metadata } from "next"
 import { ButtonLink } from "@/libs/components"
 import { PageHero } from "./(components)/page_hero"
-
-export const metadata: Metadata = {
-  title: "Page not found",
-}
 
 export default function NotFound() {
   return (

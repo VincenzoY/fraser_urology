@@ -1,4 +1,4 @@
-import { ImagePlaceholder } from "@/libs/components"
+import { Expandable, ImagePlaceholder } from "@/libs/components"
 import type { Surgeon } from "@/libs/data/surgeons"
 import { ContactDetails } from "../(components)/contact_details"
 
@@ -27,17 +27,11 @@ export function SurgeonCard({ surgeon, tone }: { surgeon: Surgeon; tone: "white"
           <div className="mt-2 space-y-4 text-lg leading-relaxed text-zinc-800">
             <p>{lead}</p>
             {rest.length > 0 ? (
-              <details className="group">
-                <summary className="cursor-pointer font-semibold text-brand-800 underline underline-offset-4 group-open:mb-4">
-                  <span className="group-open:hidden">Read full bio</span>
-                  <span className="hidden group-open:inline">Show less</span>
-                </summary>
-                <div className="space-y-4">
-                  {rest.map((p) => (
-                    <p key={p}>{p}</p>
-                  ))}
-                </div>
-              </details>
+              <Expandable expandLabel="Read full bio" collapseLabel="Show less">
+                {rest.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </Expandable>
             ) : null}
           </div>
 

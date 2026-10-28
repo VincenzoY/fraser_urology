@@ -1,11 +1,6 @@
-import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/posts"
 import { PageHero } from "../(components)/page_hero"
-
-export const metadata: Metadata = {
-  title: "News & Updates",
-}
 
 export default async function NewsletterIndex() {
   const posts = await getAllPosts()

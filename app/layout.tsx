@@ -13,10 +13,7 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fraserurology.ca"),
-  title: {
-    default: "Fraser Urology",
-    template: "%s | Fraser Urology",
-  },
+  title: "Fraser Urology",
   description:
     "Compassionate, expert urologic care in Fraser Health, from Burnaby to Boston Bar.",
 }
