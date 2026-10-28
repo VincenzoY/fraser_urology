@@ -9,6 +9,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-50: #f0f8fd;
+  --color-brand-100: #dcedf8;
+  --color-brand-200: #bddcf0;
+  --color-brand-300: #8fc3e3;
+  --color-brand-700: #1b6a99;
+  --color-brand-800: #17536f;
+  --color-brand-900: #0f3a52;
+  --color-navy: #002145;
+  --color-fraser-orange: #f28a1d;
+  --color-fraser-orange-dark: #d97708;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
